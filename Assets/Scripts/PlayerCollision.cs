@@ -10,7 +10,6 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collision.body as Rigidbody)
         {
-            Debug.Log(collision.collider.name);
             collision.collider.attachedRigidbody.useGravity = true;
         }
     }
