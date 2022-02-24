@@ -1,15 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Transform playerBody;
+    public Vector3 position = new Vector3(-10, 5, -8);
+    public float movement = 2f;
 
-    public Vector3 offset;
+    void Start()
+    {
+        transform.position = position;
+    }
 
     void Update()
     {
-        transform.position = playerBody.position + offset;
+        transform.position = new Vector3(
+            transform.position.x + 1 * movement * Time.deltaTime,
+            position.y,
+            position.z
+        );
     }
 }
