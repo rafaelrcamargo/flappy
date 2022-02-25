@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public float movementSpeed = 100f;
     public float jumpHeight = 250f;
-
     public Camera cam;
 
     void Update()
