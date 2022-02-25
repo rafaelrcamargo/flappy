@@ -25,7 +25,7 @@ public class DangerContrller : MonoBehaviour
         float dangerX = (float)viewPos.x;
         float dangerY = (float)viewPos.y;
 
-        if (viewPos.y < 0.3)
+        if (viewPos.y < 0.2)
         {
             bottomIndicator.GetComponent<MeshRenderer>().material = dangerMat;
         }
@@ -34,7 +34,7 @@ public class DangerContrller : MonoBehaviour
             bottomIndicator.GetComponent<MeshRenderer>().material = transMat;
         }
 
-        if (viewPos.y > 0.7)
+        if (viewPos.y > 0.8)
         {
             topIndicator.GetComponent<MeshRenderer>().material = dangerMat;
         }

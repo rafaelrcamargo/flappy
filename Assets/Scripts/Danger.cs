@@ -15,7 +15,7 @@ public class Danger : MonoBehaviour
         float dangerX = (float)viewPos.x;
         float dangerY = (float)viewPos.y;
 
-        if (viewPos.x < 0.3 || viewPos.x > 0.8)
+        if (viewPos.x < 0.2 || viewPos.x > 0.8)
         {
             dangerX = 1;
         }
@@ -24,7 +24,7 @@ public class Danger : MonoBehaviour
             dangerX = 0;
         }
 
-        if (viewPos.y < 0.3 || viewPos.y > 0.8)
+        if (viewPos.y < 0.2 || viewPos.y > 0.8)
         {
             dangerY = 1;
         }
